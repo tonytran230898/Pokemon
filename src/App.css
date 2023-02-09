@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-y: visible;
+  overflow-x: hidden;
+  font-size: 1.15rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: #092154;
+}
+
+.container {
+  margin: 1rem 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pokemon__logo {
+  width: 40%;
+}
+
+.pokemon__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn button {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #f72420;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  transition: all 0.3s linear;
+}
+
+.btn button:hover {
+  background-color: white;
+  color: #092154;
+}
